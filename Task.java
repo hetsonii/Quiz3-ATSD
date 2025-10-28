@@ -9,6 +9,14 @@ public class Task {
         assignedMembers.add(member);
     }
 
+    public void updateStatus(String status) {
+        
+    }
+
+    public boolean isOverdue() {
+        return false;
+    }
+
     public List<String> getAssignedMembers() {
         return assignedMembers;
     }
