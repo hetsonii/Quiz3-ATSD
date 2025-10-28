@@ -14,6 +14,9 @@ public class Task {
     }
 
     public boolean isOverdue() {
+        if (assignedMembers.isEmpty()) {
+            return true;
+        }
         return false;
     }
 
