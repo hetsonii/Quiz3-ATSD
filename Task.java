@@ -4,13 +4,17 @@ import java.io.*;
 
 public class Task {
     private List<String> assignedMembers = new ArrayList<>();
+    private String status;
 
     public void assignTo(String member) {
         assignedMembers.add(member);
     }
 
     public void updateStatus(String status) {
-        
+    }
+
+    public String getStatus() {
+        return status;
     }
 
     public boolean isOverdue() {
