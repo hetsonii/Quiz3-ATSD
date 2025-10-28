@@ -19,6 +19,10 @@ public class MyTest {
     @Test 
     public void testIsOverdue() {
         Task task = new Task();
+        task.updateStatus("completed");
         Assertions.assertFalse(task.isOverdue());
+
+        task.updateStatus(null);
+        Assertions.assertTrue(task.isOverdue());
     }
 }
