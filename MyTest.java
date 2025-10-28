@@ -15,4 +15,10 @@ public class MyTest {
         List<String> expectedMembers = Arrays.asList("Alice", "Bob");
         Assertions.assertEquals(expectedMembers, task.getAssignedMembers());
     }
+
+    @Test 
+    public void testIsOverdue() {
+        Task task = new Task();
+        Assertions.assertFalse(task.isOverdue());
+    }
 }
