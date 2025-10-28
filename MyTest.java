@@ -25,4 +25,11 @@ public class MyTest {
         task.updateStatus(null);
         Assertions.assertTrue(task.isOverdue());
     }
+
+    @Test
+    public void testUpdateStatus(){
+        Task task = new Task();
+        task.updateStatus("in progress");
+        Assertions.assertEquals("in progress", task.getStatus());
+    }
 }
